@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестовое задание на должность Младший Web-разработчик</title>
+    <meta name="Description" content="На этой странице отображен результат тестового задания.">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="01_selectors.css">
+</head>
+<body>
+    <h1>Вакансия веб-программист</h1>
+        <ol>
+            <li>Зарегистрировать бесплатный хостинг и домен.</li>
+            <li>Развернуть на бесплатном хостинге WP.</li>
+            <li>Шрифт на сайте «montserrat». Цвет #333333</li>
+            <li>Создать страницу.</li>
+            <li>Прописать на ней мета-теги:
+                <ul type="disc"; style="font-weight: bold";>
+                    <li><u>Title:</u> Тестовое задание на должность Младший Web-разработчик</li>
+                    <li><u>Description:</u> На этой странице отображен результат тестового задания.</li>
+                    <li><u>H1:</u> Вакансия веб-программист</li>
+                </ul>
+            </li>
+            <li>После H1 разместить текст текущего тестового задания</li>
+            <li>Поставить в тексте на словосочетание <a href="#" data-toggle="modal" data-target="#exampleModal">
+            «форму обратной связи»</a> ссылку, при нажатии на которое откроется форма обратной связи в popup.</li>
+            <li>Реализовать форму обратной связи в popup окне (готовые решения и плагины использовать запрещено, библиотечки можно).</li>
+            <li>Внешний вид формы (
+                <ul type="disc";>
+                    <li>Максимальная ширина 350,</li>
+                    <li>цвет кнопки и текста #333333, при наведении на кнопку должна быть инверсия цвета.</li>
+                    <li>поле “Телефон” должно быть обязательным, у поля “Телефон” должна быть маска.</li>
+                    <li>Галочка на обработку должна быть обязательна и по умолчанию установлена.</li>
+                    <li>При невыполнении условия о обязательных полях должно выводится сообщение об ошибке, или успешном заполнении – сообщение об отправке.<br>)</li>
+                    <li>Реализовать на php функционал отправки данных с формы на почту.</li>
+                    <li>При нажатии на «крестик» форма должны закрываться.</li>
+                    <li>Страница и форма должны быть адаптивными.</li>
+                    <li>ТЗ отправить на почту ablyazova@seo.ru: ссылку на сайт, архив с сайтом.</li>
+                </ul>
+            </li> 
+        </ol>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Обратный звонок</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="contactForm" action="handler.php" method="post">
+                            <div class="form-group">
+                                <label for="name">Имя</label>
+                                <input id="name" class="form-control" name="name" required type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Телефон</label>
+                                <input id="phone" class="form-control" name="phone" required type="text" placeholder="+7">
+                            </div>
+                            <div class="form-group form-check">
+                                <input id="check" class="form-check-input" checked type="checkbox">
+                                <label class="form-check-label" for="check">Согласиться на обработку персональных данных</label>
+                            </div>
+                            <button id="button" class="btn btn-success" type="submit">Отправить</button>
+                            <div class="result">
+                                <span id="answer"></span>
+                                <span id="loader" style="display:none"><img src="images/loader.gif" alt=""></span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+        
+        <script src="js/jquery.maskedinput.min.js"></script>
+        <script src="js/main.js"></script>
+</body>
+</html>
+
+//host1860697hostlandpro.wordpress.com
