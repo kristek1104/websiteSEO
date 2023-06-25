@@ -50,29 +50,26 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <form id="contactForm" action="handler.php" method="post">
+                        <form id="contactForm" action="mail.php" method="post">
                             <div class="form-group">
                                 <label for="name">Имя</label>
-                                <input id="name" class="form-control" name="name" required type="text">
+                                <input id="name" type="text" class="form-control" name="name" required type="text">
                             </div>
                             <div class="form-group">
                                 <label for="phone">Телефон</label>
-                                <input id="phone" class="form-control" name="phone" required type="text" placeholder="+7">
+                                <input id="phone" type="tel" class="form-control" name="phone" required type="text" placeholder="+7">
                             </div>
                             <div class="form-group form-check">
                                 <input id="check" class="form-check-input" checked type="checkbox">
                                 <label class="form-check-label" for="check">Согласиться на обработку персональных данных</label>
                             </div>
                             <button id="button" class="btn btn-success" type="submit">Отправить</button>
-                            <div class="result">
-                                <span id="answer"></span>
-                                <span id="loader" style="display:none"><img src="images/loader.gif" alt=""></span>
-                            </div>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
+
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
